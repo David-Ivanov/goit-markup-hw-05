@@ -705,7 +705,7 @@ button {
     opacity: 0;
     visibility: hidden;
 
-    transition: opasity var(--transition-time) var(--cubic-bezier), visibility var(--transition-time) var(--cubic-bezier);
+    transition: opacity var(--transition-time) var(--cubic-bezier), visibility var(--transition-time) var(--cubic-bezier);
 
     background-color: rgba(46, 47, 66, 0.40);
 }
@@ -916,7 +916,7 @@ button {
     width: 16px;
     height: 16px;
 
-    transition: border-color var(--transition-time) var(--cubic-bezier), border var(--transition-time) var(--cubic-bezier), fill var(--transition-time) var(--cubic-bezier);
+    transition: background-color var(--transition-time) var(--cubic-bezier), border var(--transition-time) var(--cubic-bezier), fill var(--transition-time) var(--cubic-bezier);
 
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
@@ -952,7 +952,7 @@ button {
 .modal-submit-btn {
     display: block;
 
-    max-width: 169px;
+    min-width: 169px;
     height: 56px;
 
     margin-left: auto;

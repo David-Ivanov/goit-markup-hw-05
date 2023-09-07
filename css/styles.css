@@ -606,9 +606,7 @@ button {
 
 /* footer form */
 
-.footer-form-lable {
-    display: block;
-
+.footer-form-title {
     margin-bottom: 16px;
 
     font-size: 16px;
@@ -619,18 +617,39 @@ button {
     color: var(--primary-color);
 }
 
+.footer-form {
+    display: flex;
+    gap: var(--primary-gap);
+}
+
 .footer-form-input {
-    padding: 8px 16px;
-    margin-right: var(--primary-gap);
+    padding-left: 16px;
 
     width: 264px;
     height: 40px;
 
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    transition: border-color var(--transition-time) var(--cubic-bezier);
+
     border-radius: 4px;
     border: 1px solid var(--primary-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 
     background-color: transparent;
+    color: var(--primary-color);
+}
+
+.footer-form-input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.48px;
+
+    color: var(--primary-color);
 }
 
 .footer-form-input:focus {
@@ -638,10 +657,12 @@ button {
 }
 
 .footer-form-btn {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+
+    min-width: 165px;
+    height: 40px;
 
     padding: 8px 24px;
 
@@ -653,7 +674,7 @@ button {
     transition: background-color var(--transition-time) var(--cubic-bezier);
 
     border-radius: 4px;
-    border: 0;
+    border: none;
 
     background-color: #4D5AE5;
     color: var(--primary-color);
@@ -663,6 +684,10 @@ button {
 .footer-form-btn:hover,
 .footer-form-btn:focus {
     background-color: var(--accent-color);
+}
+
+.footer-form-icon {
+    margin-left: 16px;
 }
 
 /* modal */

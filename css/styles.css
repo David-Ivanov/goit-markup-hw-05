@@ -538,10 +538,7 @@ button {
 .footer-container {
     display: flex;
     align-items: baseline;
-}
-
-.footer-copirate {
-    margin-right: 120px;
+    justify-content: space-between;
 }
 
 .footer-logo {
@@ -563,6 +560,9 @@ button {
 
     color: #F4F4FD;
 }
+
+/* footer social */
+
 
 .footer-social-title {
     margin-bottom: 16px;
@@ -602,4 +602,99 @@ button {
 
 .footer-social-icon {
     fill: #f4f4fd;
+}
+
+/* footer form */
+
+.footer-form-lable {
+    display: block;
+
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+
+    color: var(--primary-color);
+}
+
+.footer-form-input {
+    padding: 8px 16px;
+    margin-right: var(--primary-gap);
+
+    width: 264px;
+    height: 40px;
+
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    background-color: transparent;
+}
+
+.footer-form-input:focus {
+    border-color: #4D5AE5;
+}
+
+.footer-form-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    padding: 8px 24px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+
+    transition: background-color var(--transition-time) var(--cubic-bezier);
+
+    border-radius: 4px;
+    border: 0;
+
+    background-color: #4D5AE5;
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: var(--accent-color);
+}
+
+/* modal */
+
+.backface {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    padding: 12px;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(46, 47, 66, 0.40);
+}
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    height: 100vh;
+
+    padding-bottom: 24px;
+}
+
+.modal {
+    max-width: 408px;
+
+
+
+    border-radius: 4px;
+    background-color: #FCFCFC;
 }

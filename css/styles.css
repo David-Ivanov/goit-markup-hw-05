@@ -690,6 +690,7 @@ button {
     margin-left: 16px;
 }
 
+
 /* modal */
 
 .backface {
@@ -701,9 +702,6 @@ button {
 
     width: 100vw;
     height: 100vh;
-
-    opacity: 0;
-    visibility: hidden;
 
     transition: opacity var(--transition-time) var(--cubic-bezier), visibility var(--transition-time) var(--cubic-bezier);
 
